@@ -11,11 +11,10 @@
 |
 */
 
-Route::get('/', 
-function () {
-    return view('welcome');
-}
-);
+//Routes using controller
+Route::get('/', 'PagesController@home');
+
+
 Route::get('/contact',
 function(){
 
